@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    background-color: #F4F6FF;
+}
+
+.navbar {
+    background-color: #ffff;
+}
+
+.navbar .title-nav {
+    font-size: 14px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 5px 10px; 
+    min-width: 70px;
+}
+
+.a {
+    text-decoration: none;
+}
