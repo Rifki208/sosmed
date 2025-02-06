@@ -3,8 +3,15 @@ body {
     background-color: #F4F6FF;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .navbar {
     background-color: #ffff;
+    padding: 0;
 }
 
 .navbar .title-nav {
@@ -12,10 +19,81 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link {
-    padding: 5px 10px; 
+    padding: 5px 10px;
     min-width: 70px;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.messages-btn {
+    display: none;
 }
 
 .a {
     text-decoration: none;
+}
+
+.main-content {
+    padding-top: 15px;
+}
+
+.reposts {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 3px;
+    }
+
+    .messages-btn {
+        display: block;
+    }
+
+    .navbar-mobile {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffff;
+        z-index: 1000;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .alert {
+        display: none;
+    }
+
+    .post {
+        display: none;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .post-content {
+        padding: 0;
+    }
+
+    .sidebar-kanan {
+        display: none;
+    }
+
+    .reposts {
+        display: none;
+    }
 }
