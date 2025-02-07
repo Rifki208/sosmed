@@ -387,11 +387,98 @@
             <div class="d-flex gap-2 align-items-center mb-4">
               <img src="assets/image/default-avatar.png" class="rounded-circle" style="width: 55px; height: 55px;"
                 alt="avatar-post">
-              <input class="form-control rounded-pill border border-secondary-subtle p-3" type="text"
-                placeholder="New post..">
+              <!-- Modal -->
+              <button type="button" class="rounded-pill border border-secondary-subtle p-3 w-100 bg-transparent"
+                data-bs-toggle="modal" data-bs-target="#ModalPost">
+                <span class="d-flex align-items-center">
+                  New post..
+                </span>
+              </button>
+
+              <div class="modal fade" id="ModalPost" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0 d-flex align-items-start p-3">
+                      <div class="d-flex flex-row align-items-center">
+                        <img src="assets/image/default-avatar.png" class="rounded-circle"
+                          style="width: 55px; height: 55px;" alt="avatar-post">
+                        <div class="d-flex flex-column gap-1 ms-2">
+                          <h6 class="card-title text-uppercase fw-semibold mb-1">Rifki Darmawan</h6>
+                          <p class="card-text fw-normal text-body-secondary" style="font-size: 11px;">Palembang, Sumatra
+                            Selatan</p>
+                        </div>
+                      </div>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-2">
+                        <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="10"
+                          placeholder="What do you want to talk about?"></textarea>
+                      </div>
+                      <div>
+                        <div class="d-flex flex-column justify-content-center align-items-start gap-4">
+                          <button type="button" class="btn btn-outline-secondary btn-sm rounded-circle p-1 border-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                              class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                              <path
+                                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
+                            </svg>
+                          </button>
+                          <div class="d-flex flex-row align-items-center gap-2">
+                            <button type="button"
+                              class="btn btn-outline-secondary btn-sm d-flex justify-content-center align-items-center p-1 border-0"
+                              data-bs-toggle="modal" data-bs-target="#ModalMedia">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                  d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z" />
+                              </svg>
+                            </button>
+                            <button type="button"
+                              class="btn btn-outline-secondary btn-sm d-flex justify-content-center align-items-center p-1 border-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                <path
+                                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                              </svg>
+                            </button>
+                            <button type="button"
+                              class="btn btn-outline-secondary rounded-circle btn-sm d-flex justify-content-center align-items-center p-1 border-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-gear-wide-connected" viewBox="0 0 16 16">
+                                <path
+                                  d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5m0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78zM5.048 3.967l-.087.065zm-.431.355A4.98 4.98 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8zm.344 7.646.087.065z" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button"
+                        class="btn btn-outline-secondary btn-sm rounded-circle d-flex justify-content-center align-items-center p-1 border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                          class="bi bi-clock" viewBox="0 0 16 16">
+                          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>
+                      </button>
+                      <button type="button" class="btn btn-outline-primary btn-sm rounded-pill">Post</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
             </div>
             <div class="d-flex justify-content-between align-items-center mx-5" style="font-size: 16px;">
-              <a href="" class="d-flex flex-row align-items-center" style="text-decoration: none;  color: #000000;">
+              <!-- Modal Media -->
+              <button type="button" class="btn d-flex flex-row align-items-center"
+                style="text-decoration: none;  color: #000000;" data-bs-toggle="modal" data-bs-target="#ModalMedia">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3674B5" class="bi bi-image"
                   viewBox="0 0 16 16">
                   <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
@@ -399,8 +486,41 @@
                     d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z" />
                 </svg>
                 <span class="mx-2">Media</span>
-              </a>
-              <a href="" class="d-flex flex-row align-items-center" style="text-decoration: none; color: #000000;">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="ModalMedia" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Editor</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-light">
+                      <div class="d-flex flex-column justify-content-center align-items-center p-5">
+                        <div class="d-flex flex-row justify-content-center align-items-center gap-2 py-2">
+                          <img src="assets/image/upload-media.svg" alt="media">
+                        </div>
+                        <h3>Select files to begin</h3>
+                        <p>Share images or a single video in your post.</p>
+                        <input type="file" class="form-control" id="uploadFile" hidden>
+                        <label for="uploadFile" class="btn btn-primary btn-sm rounded-pill mt-2 px-2">Upload from
+                          computer
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-primary btn-sm rounded-pill"
+                        data-bs-target="#ModalPost" data-bs-toggle="modal">Back</button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal Media -->
+              <!-- Modal Event -->
+              <button type="button" class="btn d-flex flex-row align-items-center"
+                style="text-decoration: none; color: #000000;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FF6600"
                   class="bi bi-calendar-event" viewBox="0 0 16 16">
                   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
@@ -408,7 +528,142 @@
                     d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
                 </svg>
                 <span class="mx-2">Event</span>
-              </a>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create an event</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                      <label for="uploadFileEvent"
+                        class="d-flex flex-column justify-content-center align-items-center w-100 rounded-none"
+                        style="background-color: #EEEEEE; cursor: pointer;">
+                        <div class="d-flex flex-column justify-content-center align-items-center py-5">
+                          <input type="file" class="form-control border-0" id="uploadFileEvent" hidden>
+                          <div class="d-flex flex-row justify-content-center align-items-center">
+                            <img src="assets/image/event.svg" alt="media" style="width: 50px; height: 50px;">
+                          </div>
+                          <h5 class="mt-2 fw-semibold" style="font-size: 16px; color: #333;">Upload Cover Image</h5>
+                          <p style="font-size: 14px; color: #666;">Minimum width 480 pixels, 16:9 recommended</p>
+                        </div>
+                      </label>
+                      <div class="mt-2 p-3">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Event type</label>
+                          <div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                              <label class="form-check-label" for="inlineRadio1">Online</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                              <label class="form-check-label" for="inlineRadio2">In person</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name Event*</label>
+                          <input type="email" class="form-control" id="name">
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                          <label for="timezone" class="form-label">Time Zone*</label>
+                          <select class="form-select" id="timezone">
+                            <option value="UTC-12">(UTC-12) Baker Island Time</option>
+                            <option value="UTC-11">(UTC-11) Samoa Time</option>
+                            <option value="UTC-10">(UTC-10) Hawaii-Aleutian Time</option>
+                            <option value="UTC-9">(UTC-9) Alaska Time</option>
+                            <option value="UTC-8">(UTC-8) Pacific Time</option>
+                            <option value="UTC-7">(UTC-7) Mountain Time</option>
+                            <option value="UTC-6">(UTC-6) Central Time</option>
+                            <option value="UTC-5">(UTC-5) Eastern Time</option>
+                            <option value="UTC-4">(UTC-4) Atlantic Time</option>
+                            <option value="UTC-3">(UTC-3) West Africa Time</option>
+                            <option value="UTC-2">(UTC-2) Mid-Atlantic Time</option>
+                            <option value="UTC-1">(UTC-1) Azores Time</option>
+                            <option value="UTC+0">(UTC+0) Greenwich Mean Time</option>
+                            <option value="UTC+1">(UTC+1) Central European Time</option>
+                            <option value="UTC+2">(UTC+2) Eastern European Time</option>
+                            <option value="UTC+3">(UTC+3) Moscow Time</option>
+                            <option value="UTC+4">(UTC+4) Astrakhan Time</option>
+                            <option value="UTC+5">(UTC+5) Pakistan Time</option>
+                            <option value="UTC+6">(UTC+6) Bangladesh Time</option>
+                            <option value="UTC+7">(UTC+7) Krasnoyarsk Time</option>
+                            <option value="UTC+8">(UTC+8) China Standard Time</option>
+                            <option value="UTC+9">(UTC+9) Japan Standard Time</option>
+                            <option value="UTC+10">(UTC+10) Australian Western Standard Time</option>
+                            <option value="UTC+11">(UTC+11) Solomon Islands Time</option>
+                            <option value="UTC+12">(UTC+12) Kiribati Time</option>
+                          </select>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col">
+                            <label for="start" class="form-label">Start date*</label>
+                            <input type="date" class="form-control" id="start">
+                          </div>
+                          <div class="col">
+                            <label for="end" class="form-label">Start Time*</label>
+                            <input type="time" class="form-control" id="end">
+                          </div>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Add end date and time
+                          </label>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col">
+                            <label for="start" class="form-label">End date*</label>
+                            <input type="date" class="form-control" id="start">
+                          </div>
+                          <div class="col">
+                            <label for="end" class="form-label">End Time*</label>
+                            <input type="time" class="form-control" id="end">
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="link" class="form-label">External event link*</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <label for="link" class="form-label">Speakers</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                              </svg>
+                            </span>
+                            <input type="text" class="form-control" id="name" aria-describedby="basic-addon1">
+                            <div id="passwordHelpBlock" class="form-text">
+                              Add connections to speak at the event. Speakers can join the event early and will be shown
+                              in the event’s Details
+                              section and presenter area. They cannot allow attendees to speak or end the event.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal  Event -->
+              <!-- Modal Article -->
               <a href="" class="d-flex flex-row align-items-center" style="text-decoration: none; color: #000000;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#E52020"
                   class="bi bi-blockquote-left" viewBox="0 0 16 16">
@@ -472,7 +727,8 @@
               </button>
             </div>
             <div>
-              <p style="font-size: 14px; color: #4C585B;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              <p style="font-size: 14px; color: #4C585B;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eius
                 earum praesentium saepe quas non ducimus
                 voluptates exercitationem illo. Accusamus, cumque.</p>
             </div>
@@ -592,7 +848,8 @@
               </button>
             </div>
             <div>
-              <p style="font-size: 14px; color: #4C585B;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              <p style="font-size: 14px; color: #4C585B;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eius
                 earum praesentium saepe quas non ducimus
                 voluptates exercitationem illo. Accusamus, cumque.</p>
             </div>
