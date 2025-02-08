@@ -98,35 +98,6 @@ body {
         padding: 3px;
     }
 
-    .search-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        /* Beri jarak antara search dan tombol chat */
-    }
-
-    .search-container form {
-        flex: 1;
-        max-width: 200px;
-        /* Batasi lebar maksimal */
-    }
-
-    .search-container input {
-        width: 100%;
-        max-width: 200px;
-        /* Batasi ukuran input */
-    }
-
-    .chat-btn {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        cursor: pointer;
-    }
-
     .messages-btn {
         display: block;
     }
