@@ -146,4 +146,18 @@ body {
     .navbar .title-nav {
         font-size: 10px;
     }
+
+    /* modal post */
+
+    .modal-content {
+        border-radius: 10px;
+    }
+
+    .modal-body textarea {
+        font-size: 14px;
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+    }
 }
